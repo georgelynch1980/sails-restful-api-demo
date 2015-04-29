@@ -35,7 +35,7 @@ $(document).ready(function () {
     //var _someView=new APP.SomeView();
     $("#send_btn").click(function () {
         console.log("click")
-        /*
+        
         //新增
         $.ajax({
             type: "POST",
@@ -60,7 +60,7 @@ $(document).ready(function () {
                 console.log("err jqXHR.status:", jqXHR.status);
             }
         });
-        
+        /*
         //查詢
         $.ajax({
             type: "GET",

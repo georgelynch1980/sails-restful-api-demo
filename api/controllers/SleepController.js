@@ -43,7 +43,7 @@ module.exports = {
                 where: where || undefined
             }
 
-            console.log("this is the options", options);
+            //console.log("this is the options", options);
 
             Sleep.find(options, function (err, data) {
                 if (data === undefined) return res.notFound();
@@ -67,8 +67,8 @@ module.exports = {
 
         var id = req.param('id');
 
-        console.log(id);
-        console.log(criteria);
+        //console.log(id);
+        //console.log(criteria);
 
         if (!id) {
             return res.badRequest('No id provided.');
@@ -87,7 +87,7 @@ module.exports = {
     },
     destroy: function (req, res, next) {
         var id = req.param('id');
-        console.log(id)
+        //console.log(id)
         if (!id) {
             return res.badRequest('No id provided.');
         }
